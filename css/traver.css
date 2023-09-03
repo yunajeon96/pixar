@@ -1,0 +1,1691 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+li,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: transparent;
+}
+
+/*430px 모바일 사이즈*/
+@media screen and (max-width:430px) {
+	.fullscreen {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		background-color: white;
+		background: url(../img/cocomain.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+
+
+	}
+
+	.backgroundcolor {
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		display: none;
+		position: absolute;
+	}
+
+
+	.wrap {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 10;
+	}
+
+
+	.textbox {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		/* background-image: url(/img/cocomain.jpg); */
+	}
+
+
+	@keyframes fadeInUp {
+		0% {
+			opacity: 0;
+			transform: translate3d(0, 100%, 0);
+		}
+
+		to {
+			opacity: 1;
+			transform: translateZ(0);
+		}
+	}
+
+	.textbox {
+
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		cursor: default;
+	}
+
+	.text {
+		z-index: 5;
+		font-size: 3vw;
+	}
+
+	.textbox>.text>h1 {
+		font-family: 'Luckiest Guy', cursive;
+		font-size: 20vw;
+		white-space: nowrap;
+		opacity: 1;
+		position: absolute;
+		text-align: center;
+		top: 12%;
+		left: 11.5%;
+		letter-spacing: 10px;
+		color: rgb(255, 255, 255);
+		/* -webkit-text-stroke: 2px #ffffff; */
+		font-weight: 500;
+		text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+		text-align: center;
+	}
+
+	.textbox>.text>h1:nth-of-type(2) {
+		font-family: 'Luckiest Guy', cursive;
+
+		font-size: 9vw;
+		white-space: nowrap;
+		opacity: 1;
+		position: absolute;
+		top: 21%;
+		left: 12.5%;
+		color: rgb(255, 255, 255);
+		/* -webkit-text-stroke: 2px #ffffff; */
+		font-weight: 500;
+		text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+
+	}
+
+	.textbox>.trip {
+		width: 20px;
+		height: 20px;
+		position: relative;
+	}
+
+	.textbox>.text>h3 {
+		font-family: 'TheJamsil';
+		font-size: 4vw;
+		white-space: nowrap;
+		opacity: 1;
+		position: absolute;
+		top: 26%;
+		left: 13%;
+		color: rgb(255, 255, 255);
+		font-weight: 500;
+		text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+		word-spacing: 2px;
+		line-height: 5vw;
+		z-index: 1;
+
+	}
+
+	.textbox>.text>.text_obj {
+		animation: fadeInUp 3s;
+
+	}
+
+
+	.two>button {
+		z-index: 1;
+		font-family: 'TheJamsil';
+		position: absolute;
+		width: 40vw;
+		height: 15vw;
+		background-color: #ffffff;
+		top: 34%;
+		left: 31%;
+		border-radius: 30px;
+		border: none;
+		animation: fadeInUp 3s;
+		color: #464646;
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+		cursor: pointer;
+		font-size: 4vw;
+	}
+
+	.wrap>button:hover {
+		background-color: rgba(255, 255, 255, 0.8);
+	}
+
+	.pngimg {
+		width: 60%;
+		height: 60%;
+		position: absolute;
+		top: 25%;
+		left: 25%;
+		z-index: 1;
+		opacity: 0;
+		transition: all 1.5s;
+		display: none;
+
+	}
+
+	.pngimg img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		opacity: 0.9;
+		top: -15%;
+		left: -6%;
+		display: none;
+	}
+
+	.pngimg h1 {
+		position: absolute;
+		left: 13%;
+		top: 6%;
+		text-align: center;
+		font-family: 'TheJamsil';
+		opacity: 1;
+		color: #fff;
+		text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+		z-index: 9;
+		font-size: 2rem;
+
+	}
+
+	.pngimg h4 {
+		position: absolute;
+		left: 7%;
+		top: 22%;
+		text-align: center;
+		font-family: 'TheJamsil';
+		opacity: 0.9;
+		color: #fff;
+		text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+		z-index: 9;
+		line-height: 22px;
+		font-size: 0.9rem;
+	}
+
+	.pngimg h2 {
+		position: absolute;
+		left: 37%;
+		top: 45%;
+		text-align: center;
+		font-family: 'TheJamsil';
+		opacity: 0.9;
+		color: #ffffff;
+		text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+		z-index: 9;
+		font-size: 1.2rem;
+	}
+
+	.pngimg .coco {
+		width: 35%;
+		height: auto;
+		position: absolute;
+		top: 34%;
+		left: 6%;
+		opacity: 1;
+		filter: contrast(200%);
+		text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+	}
+
+	#slidewrap {
+		width: 200%;
+		height: 100%;
+		position: absolute;
+		overflow: hidden;
+		mask-image: url(../img/brush.png);
+		-webkit-mask-image: url(../img/brush.png);
+		mask-size: contain;
+		-webkit-mask-size: contain;
+		mask-repeat: no-repeat;
+		-webkit-mask-repeat: no-repeat;
+		animation: fadeInUp 3s;
+		cursor: pointer;
+		z-index: 2;
+		top: 94vw;
+		left: -45vw;
+
+	}
+
+
+	.slide {
+		width: 400%;
+		overflow: hidden;
+
+	}
+
+	.slide li {
+		width: 25%;
+		height: 100%;
+		float: left;
+	}
+
+	.slide li img {
+		width: 100%;
+		height: auto;
+	}
+
+	.slide li img:hover {
+		opacity: 1;
+	}
+
+
+	.prev {
+		left: 0;
+		color: #fff;
+		font-size: 22vw;
+		font-family: 'TheJamsil';
+		opacity: 0.8;
+
+	}
+
+	.next {
+		right: 0;
+		color: #fff;
+		font-size: 22vw;
+		font-family: 'TheJamsil';
+		opacity: 0.8;
+
+	}
+
+	.slidebtton_l {
+		position: absolute;
+		top: 47vw;
+		left: 47vw;
+	}
+
+	.slidebtton_l span:hover {
+		color: #d4d4d4;
+	}
+
+	.slidebtton_r span:hover {
+		color: #d4d4d4;
+	}
+
+
+	.slidebtton_l {
+		animation: fadeInUp 3s;
+	}
+
+	.slidebtton_r {
+		position: absolute;
+		top: 47vw;
+		left: 134vw;
+
+	}
+
+	.slidebtton_r {
+		animation: fadeInUp 3s;
+	}
+
+	.modal {
+		display: none;
+		z-index: 8;
+		width: 100%;
+		height: 30%;
+		position: absolute;
+		top: 30%;
+		left: 0%;
+		background-color: #000;
+		overflow: hidden;
+		border-radius: 20px;
+
+
+	}
+
+	.modal img {
+		width: 100%;
+		height: 100%;
+		display: none;
+	}
+
+	.modalBox {
+		position: absolute;
+		text-align: center;
+		background-color: #398fff;
+		width: 100%;
+		height: 100%;
+		display: none;
+
+	}
+
+	.modaltextbox {
+		position: absolute;
+		bottom: 0%;
+		left: 0;
+		width: 100%;
+		height: 15%;
+		background-color: rgba(255, 255, 255, 0.7);
+		display: none;
+	}
+
+
+
+	.popup {
+		display: none;
+		width: 100vw;
+		height: 100vw;
+		position: absolute;
+		top: 90vw;
+		left: 0;
+		overflow: hidden;
+		border-radius: 5px;
+		background-color: #f0f0f0;
+		z-index: 10;
+		/* box-shadow: 9px 16px 16px hsl(0deg 0% 0% 0.25); */
+		animation: fadeInUp 2s;
+		transition: all 2s;
+	}
+
+	.popupimg img {
+		width: 100vw;
+		height: 100vw;
+	}
+
+	.popupimg img:nth-of-type(2) {
+		opacity: 1;
+		animation: fadeInUp 3s;
+		width: 100vw;
+		height: auto;
+		position: absolute;
+		top: 30%;
+		right: 16%;
+	}
+
+	.popupimg img:nth-of-type(3) {
+		opacity: 0.9;
+		animation: fadeInUp 3s;
+		position: absolute;
+		top: 25%;
+		left: 2%;
+		width: 85%;
+		height: auto;
+	}
+
+	.popuptext {
+		position: absolute;
+		top: 5%;
+		right: -10%;
+		width: 98vw;
+		height: 35vw;
+		animation: fadeInUp 3s;
+		line-height: 11vw;
+		font-size: 10vw;
+	}
+
+	.popup span {
+		font-family: 'TheJamsil';
+		font-size: 9vw;
+		opacity: 1;
+		color: rgb(255, 255, 255);
+		text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.336);
+		text-align: center;
+		pointer-events: none;
+	}
+
+	.popuptext span:nth-of-type(2) {
+		text-decoration: line-through #ff0000;
+		-webkit-text-decoration: line-through #ff0000;
+
+	}
+
+
+
+	.popup span:nth-of-type(3) {
+		color: rgb(248, 7, 7);
+		font-weight: bold;
+
+
+	}
+
+	.popupimg img {
+		width: auto;
+		height: 100vw;
+		position: absolute;
+		opacity: 0.6;
+	}
+
+	.xbtn {
+		border: none;
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 1%;
+		right: 1%;
+		background-color: transparent;
+		font-size: 30px;
+		color: #ffffff;
+		text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.336);
+
+	}
+
+	.xbtn:hover {
+
+		color: #000000;
+	}
+
+	.select_trip {
+		position: absolute;
+		right: 65%;
+		top: 65%;
+		font-family: 'TheJamsil';
+		color: #fff;
+		text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.6);
+		font-size: 4.5vw;
+		animation: fadeInUp 3s;
+		line-height: 6.5vw;
+	}
+
+	.select_trip table {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	select {
+		border: none;
+		width: 13vw;
+		height: 5vw;
+		font-family: 'TheJamsil';
+		position: absolute;
+		left: 100%;
+		top: 15%;
+		border: none;
+
+	}
+
+	select:hover {
+		background-color: #d4d4d4;
+		color: #414141;
+	}
+
+	.select_trip button {
+		width: 100px;
+		height: 30px;
+		border-radius: 10px;
+		border: none;
+		position: absolute;
+		top: 120%;
+		font-family: 'TheJamsil';
+		color: #ffffff;
+		background-color: rgba(0, 0, 0, 0.404);
+		cursor: pointer;
+		text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.336);
+
+
+	}
+
+	.select_trip button:hover {
+
+		background-color: rgba(255, 255, 255, 0.5);
+		color: #000000;
+		cursor: pointer;
+		text-shadow: 1px 2px 7px rgba(255, 255, 255, 0.336);
+
+
+	}
+
+	.iconbox {
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		top: 15%;
+		right: 23%;
+		z-index: 8;
+		opacity: 0.8;
+		background-color: transparent;
+		display: none;
+
+	}
+
+	.iconbox>.iconbtn {
+		font-family: 'Gugi', cursive;
+		position: absolute;
+		width: auto;
+		height: 100%;
+		top: 110%;
+		left: 95%;
+		border: none;
+		font-size: 70px;
+		background-color: transparent;
+		animation: fadeInUp 3s;
+		color: #fff;
+		text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.336);
+		cursor: pointer;
+		display: none;
+	}
+}
+
+
+/*430px ~ 1280 태블릿 사이즈*/
+@media screen and (min-width:431px) and (max-width:1280px) {
+
+	.fullscreen {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		background-color: white;
+		background: url(../img/cocomain.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+
+
+	}
+
+	.backgroundcolor {
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		display: none;
+		position: absolute;
+	}
+
+
+	.wrap {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 10;
+	}
+
+	.textbox {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+
+	@keyframes fadeInUp {
+		0% {
+			opacity: 0;
+			transform: translate3d(0, 100%, 0);
+		}
+
+		to {
+			opacity: 1;
+			transform: translateZ(0);
+		}
+	}
+
+	.textbox {
+
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		cursor: default;
+
+	}
+
+	.text {
+		z-index: 5;
+		font-size: 3vw;
+
+	}
+
+	.textbox>.text>h1 {
+		font-family: 'Luckiest Guy', cursive;
+		font-size: 7.5vw;
+		white-space: nowrap;
+		opacity: 1;
+		position: absolute;
+		text-align: center;
+		top: 2%;
+		left: 12%;
+		letter-spacing: 10px;
+		color: rgb(255, 255, 255);
+		/* -webkit-text-stroke: 2px #ffffff; */
+		font-weight: 500;
+		text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+	}
+
+	.textbox>.text>h1:nth-of-type(2) {
+		font-family: 'Luckiest Guy', cursive;
+
+		font-size: 4vw;
+		white-space: nowrap;
+		opacity: 1;
+		position: absolute;
+		top: 15%;
+		left: 12%;
+		color: rgb(255, 255, 255);
+		/* -webkit-text-stroke: 2px #ffffff; */
+		font-weight: 500;
+		text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+
+	}
+
+	.textbox>.trip {
+		width: 20px;
+		height: 20px;
+		position: relative;
+	}
+
+	.textbox>.text>h3 {
+		font-family: 'TheJamsil';
+		font-size: 1.5vw;
+		white-space: nowrap;
+		opacity: 1;
+		position: absolute;
+		top: 23%;
+		left: 12.5%;
+		color: rgb(255, 255, 255);
+		font-weight: 500;
+		text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+		word-spacing: 2px;
+		line-height: 25px;
+		z-index: 1;
+
+	}
+
+	.textbox>.text>.text_obj {
+		animation: fadeInUp 3s;
+
+	}
+
+
+	.two>button {
+		z-index: 1;
+		font-family: 'TheJamsil';
+		position: absolute;
+		width: 8vw;
+		height: 2.5vw;
+		background-color: #ffffff;
+		top: 31%;
+		left: 12.2%;
+		border-radius: 30px;
+		border: none;
+		animation: fadeInUp 3s;
+		color: #464646;
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+		cursor: pointer;
+		z-index: 5;
+	}
+
+	.wrap>button:hover {
+		background-color: rgba(255, 255, 255, 0.8);
+	}
+
+	.pngimg {
+		width: 60%;
+		height: 60%;
+		position: absolute;
+		top: 25%;
+		left: 25%;
+		z-index: 1;
+		opacity: 0;
+		transition: all 1.5s;
+
+	}
+
+	.pngimg img {
+		position: absolute;
+		width: 50vw;
+		height: 30vw;
+		opacity: 0.9;
+		top: -15%;
+		left: -6%;
+		font-size: 3vw;
+	}
+
+	.pngimg h1 {
+		position: absolute;
+		left: 16%;
+		top: 6%;
+		text-align: center;
+		font-family: 'TheJamsil';
+		opacity: 1;
+		color: #fff;
+		text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+		z-index: 9;
+		font-size: 2.4vw;
+
+	}
+
+	.pngimg h4 {
+		position: absolute;
+		left: 5%;
+		top: 18%;
+		text-align: center;
+		font-family: 'TheJamsil';
+		opacity: 0.9;
+		color: #fff;
+		text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+		z-index: 9;
+		line-height: 28px;
+		font-size: 1.2vw;
+	}
+
+	.pngimg h2 {
+		position: absolute;
+		left: 31%;
+		top: 45%;
+		text-align: center;
+		font-family: 'TheJamsil';
+		opacity: 0.9;
+		color: #ffffff;
+		text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+		z-index: 9;
+		font-size: 1.8vw;
+	}
+
+	.pngimg .coco {
+		width: 30%;
+		height: auto;
+		position: absolute;
+		top: 36%;
+		left: 4%;
+		opacity: 1;
+		filter: contrast(200%);
+		text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+	}
+
+	#slidewrap {
+		width: 82%;
+		height: 82%;
+		position: absolute;
+		overflow: hidden;
+		mask-image: url(../img/brush.png);
+		-webkit-mask-image: url(../img/brush.png);
+		mask-size: contain;
+		-webkit-mask-size: contain;
+		mask-repeat: no-repeat;
+		-webkit-mask-repeat: no-repeat;
+		animation: fadeInUp 3s;
+		cursor: pointer;
+		z-index: 2;
+		top: 28%;
+
+	}
+
+
+	.slide {
+		width: 400%;
+		overflow: hidden;
+
+	}
+
+	.slide li {
+		width: 25%;
+		height: 100%;
+		float: left;
+	}
+
+	.slide li img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.slide li img:hover {
+		opacity: 1;
+	}
+
+
+	.prev {
+		left: 0;
+		color: #fff;
+		font-size: 8vw;
+		font-family: 'TheJamsil';
+		opacity: 0.8;
+
+	}
+
+	.next {
+		right: 0;
+		font-size: 8vw;
+		color: #fff;
+		font-family: 'TheJamsil';
+		opacity: 0.8;
+
+	}
+
+	.slidebtton_l {
+		position: absolute;
+		top: 20vw;
+		left: 10vw;
+	}
+
+	.slidebtton_l span:hover {
+		color: #d4d4d4;
+	}
+
+	.slidebtton_r span:hover {
+		color: #d4d4d4;
+	}
+
+
+	.slidebtton_l {
+		animation: fadeInUp 3s;
+	}
+
+	.slidebtton_r {
+		position: absolute;
+		top: 20vw;
+		right: 10vw;
+
+	}
+
+	.slidebtton_r {
+		animation: fadeInUp 3s;
+	}
+
+	.modal {
+		display: none;
+		z-index: 8;
+		width: 80vw;
+		height: 40vw;
+		position: absolute;
+		top: 30%;
+		left: 12%;
+		background-color: #000;
+		overflow: hidden;
+		border-radius: 20px;
+		background-repeat: no-repeat;
+
+
+	}
+
+	.modal img {
+		width: 100%;
+		height: auto;
+
+	}
+
+	.modalBox {
+		position: absolute;
+		text-align: center;
+		background-color: #398fff;
+		width: 100%;
+		height: auto;
+
+	}
+
+	.modalx{width: 2.5vw;
+		height: 2.5vw;
+		background-color: rgba(255,255,255,0.8);
+		position: absolute;
+		top: 0.5vw;
+		right: 0.5vw;
+		border: none;
+		border-radius: 20px;
+		font-size: 1.2vw;
+		color: black;
+		font-family: 'TheJamsil';}
+		.modalx:hover{background-color: black; color: white;}
+
+
+
+	.popup {
+		display: none;
+		width: 80vw;
+		height: 30vw;
+		position: absolute;
+		top: 30%;
+		left: 12%;
+		overflow: hidden;
+		border-radius: 5px;
+		background-color: #f0f0f0;
+		z-index: 10;
+		/* box-shadow: 9px 16px 16px hsl(0deg 0% 0% 0.25); */
+		animation: fadeInUp 2s;
+		transition: all 2s;
+
+	}
+
+	.popupimg img {
+		width: 100vw;
+		height: 100vw;
+	}
+
+	.popupimg img:nth-of-type(2) {
+		opacity: 1;
+		animation: fadeInUp 3s;
+		width: 48vw;
+		height: auto;
+		position: absolute;
+		top: 15%;
+		right: 51%;
+	}
+
+	.popupimg img:nth-of-type(3) {
+		opacity: 0.9;
+		animation: fadeInUp 3s;
+		position: absolute;
+		top: 0;
+		left: -5%;
+	}
+
+	.popuptext {
+		position: absolute;
+		top: 10%;
+		right: 7%;
+		width: 28vw;
+		height: 20vw;
+		animation: fadeInUp 3s;
+		line-height: 3.6vw;
+		font-size: 3vw;
+	}
+
+	.popup span {
+		font-family: 'TheJamsil';
+		font-size: 3vw;
+		opacity: 1;
+		color: rgb(255, 255, 255);
+		text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.336);
+		text-align: center;
+		pointer-events: none;
+
+	}
+
+	.popup span:nth-of-type(2) {
+		text-decoration: line-through #ff0000;
+		-webkit-text-decoration: line-through #ff0000;
+
+	}
+
+
+	.popup span:nth-of-type(3) {
+		color: rgb(248, 7, 7);
+		font-weight: bold;
+
+
+	}
+
+
+	.popupimg img {
+		width: auto;
+		height: 30vw;
+		position: absolute;
+		opacity: 0.6;
+	}
+
+	.xbtn {
+		border: none;
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 1%;
+		right: 1%;
+		background-color: transparent;
+		font-size: 30px;
+		color: #ffffff;
+		text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.336);
+
+	}
+
+	.xbtn:hover {
+
+		color: #000000;
+	}
+
+	.select_trip {
+		position: relative;
+		right: -58%;
+		top: 55%;
+		font-family: 'TheJamsil';
+		color: #fff;
+		text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.6);
+		animation: fadeInUp 3s;
+		line-height: 2.3vw;
+		font-size: 1.7vw;
+	}
+
+	.select_trip table {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	select {
+		border: none;
+		width: 5vw;
+		height: 1.5vw;
+		font-family: 'TheJamsil';
+		position: absolute;
+		left: 105%;
+		top: 15%;
+		border: none;
+
+	}
+
+	select:hover {
+		background-color: #d4d4d4;
+		color: #414141;
+	}
+
+	.select_trip button {
+		width: 100px;
+		height: 30px;
+		border-radius: 10px;
+		border: none;
+		position: absolute;
+		top: 120%;
+		font-family: 'TheJamsil';
+		color: #ffffff;
+		background-color: rgba(0, 0, 0, 0.404);
+		cursor: pointer;
+		text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.336);
+
+
+	}
+
+	.select_trip button:hover {
+
+		background-color: rgba(255, 255, 255, 0.5);
+		color: #000000;
+		cursor: pointer;
+		text-shadow: 1px 2px 7px rgba(255, 255, 255, 0.336);
+
+
+	}
+
+	.iconbox {
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		top: 15%;
+		right: 23%;
+		z-index: 8;
+		opacity: 0.8;
+		background-color: transparent;
+
+	}
+
+	.iconbox>.iconbtn {
+		font-family: 'Gugi', cursive;
+		position: absolute;
+		width: auto;
+		height: 100%;
+		top: 110%;
+		left: 95%;
+		border: none;
+		font-size: 70px;
+		background-color: transparent;
+		animation: fadeInUp 3s;
+		color: #fff;
+		text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.336);
+		cursor: pointer;
+	}
+
+	.iconbtn:hover {
+		color: #d4d4d4;
+	}
+
+}
+
+
+
+/*1280이상*/
+@media screen and (min-width:1281px) {
+
+
+	.fullscreen {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		background-color: white;
+		background: url(../img/cocomain.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+
+
+	}
+
+	.backgroundcolor {
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		display: none;
+		position: absolute;
+	}
+
+	.wrap {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}
+
+	.textbox {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		/* background-image: url(/img/cocomain.jpg); */
+	}
+
+
+	@keyframes fadeInUp {
+		0% {
+			opacity: 0;
+			transform: translate3d(0, 100%, 0);
+		}
+
+		to {
+			opacity: 1;
+			transform: translateZ(0);
+		}
+	}
+
+
+	.text {
+		z-index: 5;
+		font-size: 3vw;
+	}
+
+	.textbox>.text>h1 {
+		font-family: 'Luckiest Guy', cursive;
+		font-size: 6.5vw;
+		white-space: nowrap;
+		opacity: 1;
+		position: absolute;
+		text-align: center;
+		top: 5%;
+		left: 10%;
+		letter-spacing: 10px;
+		color: rgb(255, 255, 255);
+		/* -webkit-text-stroke: 2px #ffffff; */
+		font-weight: 500;
+		text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.2);
+		cursor: default;
+	}
+
+	.textbox>.text>h1:nth-of-type(2) {
+		font-family: 'Luckiest Guy', cursive;
+		font-size: 3vw;
+		white-space: nowrap;
+		opacity: 1;
+		position: absolute;
+		top: 20%;
+		left: 10%;
+		color: rgb(255, 255, 255);
+		/* -webkit-text-stroke: 2px #ffffff; */
+		font-weight: 500;
+		text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.2);
+		cursor: default;
+
+	}
+
+	.textbox>.trip {
+		width: 20px;
+		height: 20px;
+		position: relative;
+	}
+
+	.textbox>.text>h3 {
+		font-family: 'TheJamsil';
+		font-size: 1vw;
+		white-space: nowrap;
+		opacity: 1;
+		position: absolute;
+		top: 28%;
+		left: 10.5%;
+		color: rgb(255, 255, 255);
+		font-weight: 500;
+		text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+		word-spacing: 2px;
+		line-height: 25px;
+		cursor: default;
+
+	}
+
+	.textbox>.text>.text_obj {
+		animation: fadeInUp 3s;
+
+	}
+
+
+	.two>button {
+		z-index: 1;
+		font-family: 'TheJamsil';
+		position: absolute;
+		width: 140px;
+		height: 40px;
+		background-color: #ffffff;
+		top: 35%;
+		left: 10.2%;
+		border-radius: 30px;
+		border: none;
+		animation: fadeInUp 3s;
+		color: #464646;
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+		cursor: pointer;
+	}
+
+	.wrap>button:hover {
+		background-color: rgba(255, 255, 255, 0.8);
+	}
+
+	.pngimg {
+		width: 60%;
+		height: 60%;
+		position: absolute;
+		top: 20%;
+		left: 21%;
+		z-index: 1;
+		opacity: 0;
+		transition: all 1.5s;
+		font-size: 3vw;
+
+	}
+
+	.pngimg img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		opacity: 0.9;
+	}
+
+	.pngimg h1 {
+		position: absolute;
+		left: 21%;
+		top: 22%;
+		text-align: center;
+		font-family: 'TheJamsil';
+		opacity: 0.9;
+		color: #fff;
+		text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+		z-index: 9;
+		font-size: 2vw;
+
+	}
+
+	.pngimg h4 {
+		position: absolute;
+		left: 12%;
+		top: 35%;
+		text-align: center;
+		font-family: 'TheJamsil';
+		opacity: 0.9;
+		color: #fff;
+		text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+		font-size: 18px;
+		z-index: 9;
+		line-height: 30px;
+		font-size: 1vw;
+	}
+
+	.pngimg h2 {
+		position: absolute;
+		left: 37%;
+		top: 60%;
+		text-align: center;
+		font-family: 'TheJamsil';
+		opacity: 0.9;
+		color: #ffffff;
+		text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+		z-index: 9;
+		font-size: 1.5vw;
+	}
+
+	.pngimg .coco {
+		width: 28%;
+		height: auto;
+		position: absolute;
+		top: 51%;
+		left: 12%;
+		opacity: 1;
+		filter: contrast(200%);
+		text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+	}
+
+	#slidewrap {
+		width: 68%;
+		height: 80%;
+		position: absolute;
+		overflow: hidden;
+		mask-image: url(../img/brush.png);
+		-webkit-mask-image: url(../img/brush.png);
+		mask-size: contain;
+		-webkit-mask-size: contain;
+		mask-repeat: no-repeat;
+		-webkit-mask-repeat: no-repeat;
+		animation: fadeInUp 3s;
+		cursor: pointer;
+		z-index: 2;
+		top: 20%;
+		/* left: 50; */
+
+	}
+
+
+	.slide {
+		width: 400%;
+		overflow: hidden;
+
+	}
+
+	.slide li {
+		width: 25%;
+		height: 100%;
+		float: left;
+	}
+
+	.slide li img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.slide li img:hover {
+		opacity: 1;
+	}
+
+
+	.prev {
+		left: 0;
+		color: #fff;
+		font-size: 7vw;
+		font-family: 'TheJamsil';
+		opacity: 0.8;
+		z-index: 10;
+
+	}
+
+	.next {
+		right: 0;
+		font-size: 7vw;
+		color: #fff;
+		font-family: 'TheJamsil';
+		opacity: 0.8;
+		z-index: 10;
+
+	}
+
+	.slidebtton_l {
+		position: absolute;
+		top: 43%;
+		left: 16%;
+	}
+
+	.slidebtton_l span:hover {
+		color: #d4d4d4;
+	}
+
+	.slidebtton_r span:hover {
+		color: #d4d4d4;
+	}
+
+
+	.slidebtton_l {
+		animation: fadeInUp 3s;
+	}
+
+	.slidebtton_r {
+		position: absolute;
+		top: 43%;
+		right: 12%;
+
+	}
+
+	.slidebtton_r {
+		animation: fadeInUp 3s;
+	}
+
+	.modal {
+		display: none;
+		z-index: 8;
+		width: 80%;
+		height: 80%;
+		position: absolute;
+		top: 11%;
+		left: 10%;
+		background-color: #000;
+		overflow: hidden;
+		border-radius: 20px;
+
+
+	}
+
+	.modal img {
+		width: 100%;
+		height: 120%;
+	}
+
+	.modalBox {
+		position: absolute;
+		text-align: center;
+		background-color: #398fff;
+		width: 100%;
+		height: 100%;
+
+	}
+
+	.modalx{width: 2.5vw;
+    height: 2.5vw;
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+    top: 0.5vw;
+    right: 0.5vw;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2vw;
+    color: black;
+	font-family: 'TheJamsil';}
+	.modalx:hover{background-color: black; color: white;}
+
+
+
+	.popup {
+		display: none;
+		width: 1200px;
+		height: 450px;
+		position: absolute;
+		top: 34%;
+		left: 20%;
+		overflow: hidden;
+		border-radius: 5px;
+		background-color: #f0f0f0;
+		z-index: 10;
+		/* box-shadow: 9.0px 16.0px 16.0px hsl(0deg 0% 0% 0.25); */
+		animation: fadeInUp 2s;
+		transition: all 2s;
+	}
+
+	.popupimg img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.popupimg img:nth-of-type(2) {
+		opacity: 1;
+		animation: fadeInUp 3s;
+		width: 600px;
+		height: auto;
+		position: absolute;
+		top: 20%;
+	}
+
+	.popupimg img:nth-of-type(3) {
+		opacity: 0.9;
+		animation: fadeInUp 3s;
+	}
+
+	.popuptext {
+		position: absolute;
+		top: 10%;
+		right: 7%;
+		width: 35%;
+		height: 50%;
+		animation: fadeInUp 3s;
+		line-height: 3vw;
+		font-size: 3vw;
+	}
+
+	.popup span {
+		font-family: 'TheJamsil';
+		font-size: 2.5vw;
+		opacity: 1;
+		color: rgb(255, 255, 255);
+		text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.336);
+		text-align: center;
+		pointer-events: none;
+	}
+
+	.popup span:nth-of-type(2) {
+		text-decoration: line-through #ff0000;
+		-webkit-text-decoration: line-through #ff0000;
+	}
+
+	.popup span:nth-of-type(3) {
+		color: rgb(248, 7, 7);
+		font-weight: bold
+	}
+
+
+
+	.popupimg img {
+		width: auto;
+		height: 100%;
+		position: absolute;
+		opacity: 0.6;
+	}
+
+	.xbtn {
+		border: none;
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 1%;
+		right: 1%;
+		background-color: transparent;
+		font-size: 30px;
+		color: #ffffff;
+		text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.336);
+
+	}
+
+	.xbtn:hover {
+
+		color: #000000;
+	}
+
+	.select_trip {
+		position: relative;
+		right: -58%;
+		top: 60%;
+		font-family: 'TheJamsil';
+		color: #fff;
+		text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.6);
+		font-size: 1.2vw;
+		animation: fadeInUp 3s;
+		line-height: 35px;
+		animation: fadeInUp 3s;
+	}
+
+	.select_trip table {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	select {
+		border: none;
+		width: 80px;
+		height: 23px;
+		font-family: 'TheJamsil';
+		position: absolute;
+		left: 103%;
+		top: 18%;
+		border: none;
+
+	}
+
+	select:hover {
+		background-color: #d4d4d4;
+		color: #414141;
+	}
+
+	.select_trip button {
+		width: 100px;
+		height: 30px;
+		border-radius: 10px;
+		border: none;
+		position: absolute;
+		top: 120%;
+		font-family: 'TheJamsil';
+		color: #ffffff;
+		background-color: rgba(0, 0, 0, 0.404);
+		cursor: pointer;
+		text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.336);
+
+
+	}
+
+	.select_trip button:hover {
+
+		background-color: rgba(255, 255, 255, 0.5);
+		color: #000000;
+		cursor: pointer;
+		text-shadow: 1px 2px 7px rgba(255, 255, 255, 0.336);
+
+
+	}
+
+	.iconbox {
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		top: 15%;
+		right: 23%;
+		z-index: 8;
+		opacity: 0.8;
+		background-color: transparent;
+
+	}
+
+	.iconbox>.iconbtn {
+		font-family: 'Gugi', cursive;
+		position: absolute;
+		width: auto;
+		height: 100%;
+		top: 70%;
+		left: 25%;
+		border: none;
+		font-size: 95px;
+		background-color: transparent;
+		animation: fadeInUp 3s;
+		color: #fff;
+		text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.336);
+		cursor: pointer;
+	}
+
+	.iconbtn:hover {
+		color: #d4d4d4;
+	}
+}

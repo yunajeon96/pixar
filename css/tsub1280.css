@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@media (min-width:430px){
+    * {
+        margin: 0; padding: 0;
+        color: #fff;
+    }
+    body {
+        background: url('../img/room.jpg');
+    }
+    ul, li {
+        list-style: none;
+        margin: 0; padding: 0;
+    }
+    a {
+        text-decoration: none;
+    }
+    aside{width: 90px; height: 100%; transition: 1.5s ease-in-out;
+        position: fixed; z-index: 10; background: rgba(252, 251, 251, 0.1);
+        border-right: 1px dashed rgba(252, 250, 250, 0.3); text-align: center; 
+    }
+    aside:hover{width: 200px; background: rgba(252, 251, 251, 0.3);}
+    aside a:not(:first-of-type){width: 100%; display: inline-block; margin-bottom: 50px;}
+    aside a:first-of-type{display: flex; justify-content: center; margin-top: 50px;}
+    aside a:last-of-type {margin-top: -20px;}
+    aside a img{width: 80%; }
+    aside a:nth-of-type(2){margin-top: 300px; }
+    aside a h1{overflow: hidden; transition: 1.5s ease-in-out; width: 15px; margin: 0px auto 10px; 
+        font-family: 'Luckiest Guy', cursive; font-family: 'Gugi', cursive; }
+    aside a p{font-family: 'Gugi', cursive; opacity: 0; transition: all 1s;}
+    aside a:nth-of-type(2) h1{width: 16px;}
+    aside a:nth-of-type(3) h1{width: 17px;}
+    aside a:last-of-type h1{width: 13px;}
+    aside a h1:hover{width: 100%;}
+    #wrap {
+        margin-left: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    #wrap h1 {
+        text-align: center;
+        width: 100%;
+        font-size: 30px;
+        font-family: 'Luckiest Guy', cursive;
+        letter-spacing: 3px;
+        padding: 10px 0;
+    }
+    #left {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    h3 {
+        font-family: 'TheJamsil5Bold';
+        line-height: 40px;
+        cursor: pointer;
+        font-size: 20px;
+        margin-top: 10px;
+        text-align: center;
+        width: 75%;
+    }
+    p {
+        font-family: 'TheJamsil5Bold';
+    }
+    .img {
+        width: 80%;
+        overflow: hidden;
+    }
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .box img {
+        width: 100%;
+        border-radius: 5px;
+        transition: all 0.5s ease;
+        overflow: hidden;
+    }
+    .img:hover img{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    .popup {
+        width: 36%; height: 1000px;
+        background-color: #c7d6db;
+        position: absolute;
+        top: 80%; left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        padding: 30px;
+        border-radius: 10px;
+        z-index: 10;
+        min-width: 400px;
+    }
+    .popup button {
+        float: right;
+        background-color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #333;
+        font-family: 'TheJamsil5Bold';
+    }
+    .popup p {
+        font-size: 18px;
+        line-height: 25px;
+        color: #333;
+    }
+    #imgbox {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+    }
+    #imgbox button {
+        padding: 10px;
+        border-radius: 10%;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #fff;
+        font-size: 20px;
+        position: absolute;
+        top: 75%; left: 75%;
+        font-family: 'TheJamsil5Bold';
+    }
+    #imgbox button:hover {
+        cursor: pointer;
+        background-color: #c7d6db;
+    }
+    #imgbox button:hover a {
+        color: #333;
+    }
+    .slide li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .slide {
+        width: 500%;
+    }
+    .slide>li {
+        width: 20%;
+        float: left;
+    }
+    .slide>li>img {
+        width: 330px;
+    }
+    #right {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .popup img {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
