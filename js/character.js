@@ -37,13 +37,13 @@ $(function(){
 });
 
 $(function(){ 
-console.log(location.pathname)
-    if(location.pathname == '/pixar/character1.html'){
+
+  let pn=location.pathname;
+    if(pn.includes('character1.html')){
         $(".lt").click(function(){
-console.log(location.pathname)
             location.href='character.html'
         });
-    }else if(location.pathname == '/pixar/character.html'){
+    }else if(pn.includes('character.html')){
         $(".lt").click(function(){
             location.href='character1.html'
         });
