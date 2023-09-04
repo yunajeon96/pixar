@@ -13,6 +13,6 @@ if(window.innerWidth >= 430){
     });
 }
 
-$("aside a:first-of-type").click(function(){
+$(".icon").click(function(){
     $("aside a:not(:first-of-type)").stop().slideToggle(1500);
 });

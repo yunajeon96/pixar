@@ -15,6 +15,7 @@
 <body>
     <aside>
         <a href="index.html"><img src="img/logo_white.png" alt="logo"></a>
+        <img src="img/i.png" alt="" class="icon">
         <a href="character1.html"><h1>CHARACTER</h1><p>Story Of Character</p></a>
         <a href="toystory.html"><h1>ANIMATION</h1><p>Behind Story <br> Of The Movie</p></a>
         <a href="traver.html"><h1>TRAVEL</h1><p>Place Of The Movie</p></a>
@@ -145,15 +146,9 @@
             })
         }
 
-        $("aside a:first-of-type").click(function(){
+        $(".icon").click(function(){
             $("aside a:not(:first-of-type)").stop().slideToggle(1500);
         });
-
-        if(window.innerWidth < 430){
-            $("aside a:nth-of-type(1)").click(function(e){
-                e.preventDefault();
-            });
-        }
     </script>
 </body>
 </html>
