@@ -42,7 +42,7 @@
     aside a img{width: 80%; }
     aside a:nth-of-type(2){margin-top: 300px; }
     aside a h1{overflow: hidden; transition: 1.5s ease-in-out; width: 15px; margin: 0px auto 10px; 
-        font-family: 'Luckiest Guy', cursive; font-family: 'Gugi', cursive; color: white; }
+        font-family: 'Luckiest Guy', cursive; font-family: 'Gugi', cursive; color: white; letter-spacing: 5px;}
     aside a p{font-family: 'Gugi', cursive; opacity: 0; transition: all 1s;color: white;}
     aside a:nth-of-type(2) h1{width: 16px;}
     aside a:nth-of-type(3) h1{width: 17px;}
@@ -63,7 +63,7 @@
     aside a img{width: 80%; }
     aside a:nth-of-type(2){margin-top: 300px; }
     aside a h1{overflow: hidden; transition: 1.5s ease-in-out; width: 15px; margin: 0px auto 10px; 
-        font-family: 'Luckiest Guy', cursive; font-family: 'Gugi', cursive; color: white; }
+        font-family: 'Luckiest Guy', cursive; font-family: 'Gugi', cursive; color: white; letter-spacing: 5px;}
     aside a p{font-family: 'Gugi', cursive; opacity: 0; transition: all 1s;color: white;}
     aside a:nth-of-type(2) h1{width: 16px;}
     aside a:nth-of-type(3) h1{width: 17px;}

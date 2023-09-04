@@ -1,6 +1,6 @@
 //돌아가는 원형 텍스트
 $(function(){
-    $("h1").lettering();
+    $(".floor h1").lettering();
 });
 
 
@@ -37,8 +37,7 @@ $(function(){
 });
 
 $(function(){ 
-
-  let pn=location.pathname;
+    let pn = location.pathname;
     if(pn.includes('character1.html')){
         $(".lt").click(function(){
             location.href='character.html'
