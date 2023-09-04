@@ -37,8 +37,10 @@ $(function(){
 });
 
 $(function(){ 
+console.log(location.pathname)
     if(location.pathname == '/pixar/character1.html'){
         $(".lt").click(function(){
+console.log(location.pathname)
             location.href='character.html'
         });
     }else if(location.pathname == '/pixar/character.html'){
