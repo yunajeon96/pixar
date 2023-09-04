@@ -37,11 +37,11 @@ $(function(){
 });
 
 $(function(){ 
-    if(location.pathname == '/character1.html'){
+    if(location.pathname == 'pixar/character1.html'){
         $(".lt").click(function(){
             location.href='character.html'
         });
-    }else if(location.pathname == '/character.html'){
+    }else if(location.pathname == 'pixar/character.html'){
         $(".lt").click(function(){
             location.href='character1.html'
         });
